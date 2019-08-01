@@ -26,18 +26,7 @@ iframe[src*=vimeo] {
   width: 100%;
 }
 
-.container {
+.wrapper {
   margin: 0 auto;
   max-width: 1200px;
-}
-
-.half-container {
-  display: block;
-  float: left;
-  width: 50%;
-}
-
-.three-quarters-container {
-  display: block;
-  width: 75%;
 }
