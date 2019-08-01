@@ -10,6 +10,9 @@ html {
     -webkit-margin-after: 0;
     -webkit-margin-start: 0;
     -webkit-margin-end: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 body {
@@ -29,4 +32,27 @@ iframe[src*=vimeo] {
 .wrapper {
   margin: 0 auto;
   max-width: 1200px;
+}
+
+
+.container {
+  background: #eee;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.content {
+  background: #444;
+  color: #fff;
+  height: 300px;
+  padding: 3em;
+  width: 300px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -150px;
+  margin-top: -150px;
 }
