@@ -35,13 +35,3 @@ iframe[src*=vimeo] {
   justify-content: center;
   align-items: center;
 }
-
-.content {
-  width: 100%;
-  height: 65vh;
-}
-
-.content iframe{
-  width: 100%;
-  height: 100%;
-}
