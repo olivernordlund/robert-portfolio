@@ -11,7 +11,43 @@
 <body>
 
 <div class="wrapper">
+
+<iframe src="//player.vimeo.com/video/81653560?title=0&amp;byline=0&amp;portrait=0" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> <p><a href="https://vimeo.com/81653560">Cuddles</a> from <a href="https://vimeo.com/treehousevideos">Tree House Humane Society</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+
 </div>
+
+<script type="text/javascript">
+jQuery().ready(function() {
+  resizeVideo();
+});
+
+jQuery(window).resize(function() {
+  resizeVideo();
+});
+
+/* Videos */
+function resizeVideo() {
+    jQuery('iframe').each(function() {
+        var iframe = jQuery(this),
+            src = iframe.attr('src'),
+            nativeHeight,
+            nativeWidth,
+            actualWidth,
+            ratio;
+
+        if (src.indexOf("youtube") !== -1 ||
+            src.indexOf("vimeo") !== -1) {
+
+            nativeHeight = iframe.attr('height'),
+            nativeWidth = iframe.attr('width'),
+            actualWidth = iframe.width(),
+            ratio = nativeHeight / nativeWidth;
+
+            iframe.css({height: actualWidth * ratio + 'px', width: jQuery(this).parent().width() + 'px'});
+        }
+    });
+}
+</script>
 
 </body>
 </html>

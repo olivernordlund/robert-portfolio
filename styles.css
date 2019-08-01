@@ -20,3 +20,24 @@ body {
     width: 100%;
     color: #000;
 }
+
+iframe[src*=youtube],
+iframe[src*=vimeo] {
+  width: 100%;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.half-container {
+  display: block;
+  float: left;
+  width: 50%;
+}
+
+.three-quarters-container {
+  display: block;
+  width: 75%;
+}
