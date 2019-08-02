@@ -6,13 +6,15 @@
   <meta name="author" content="Oliver Nordlund">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="styles.css?v=1.0">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 <body>
 
 <header>
-  <div class="toggleInfo">Robert Holmkvist Design & Art direction</div>
+  <div id="header-title">Robert Holmkvist Design & Art direction</div>
 </header>
+
+<div class="about">Heres some info</div>
 
 <div class="container">
   <div class="content">
@@ -21,11 +23,11 @@
 </div>
 
 <script type="text/javascript">
-function addClass(toggleInfo, open) {
-    if (!hasClass(toggleInfo, open)) {
-        toggleInfo.open += ' ' + open;
-    }
-}
+
+$('#header-title').click(function(){
+    $(this).addClass("info-open");
+    $('.about').addClass("active");
+});
 </script>
 
 
