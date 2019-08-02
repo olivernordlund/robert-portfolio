@@ -22,10 +22,12 @@ html {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
+    font-family: 'AG-Md', helvetica, arial, sans-serif;
+    font-size: 20px;
+    letter-spacing: .2px;
 }
 
 body {
-    font-family: 'AG-Md', helvetica, arial, sans-serif;
     background-color: whitesmoke;
     margin: 0;
     height: 100%;
@@ -43,4 +45,9 @@ iframe[src*=vimeo] {
   height: 100vh;
   justify-content: center;
   align-items: center;
+}
+
+header {
+margin: .75rem 1rem;
+text-transform: uppercase;
 }
