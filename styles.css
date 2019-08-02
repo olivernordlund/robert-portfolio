@@ -62,7 +62,7 @@ iframe[src*=vimeo] {
 }
 
 .about {
-  margin-top: 2.5rem;
+  margin-top: .75rem;
 }
 
 @keyframes fadein {
