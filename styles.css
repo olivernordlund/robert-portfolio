@@ -62,8 +62,15 @@ iframe[src*=vimeo] {
 }
 
 .about-wrapper {
-  padding-top: .75rem;
+  padding-top: 2.5rem;
+}
+
+.about .col-75 {
   width: 75%;
+}
+
+.about.active {
+  z-index: 9;
 }
 
 .about {
@@ -72,6 +79,8 @@ iframe[src*=vimeo] {
   height: 100%;
   top:0;
   left:0;
+  z-index: -1;
+  background-color:white;
 }
 
 @keyframes fadein {
