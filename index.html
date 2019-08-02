@@ -12,7 +12,7 @@
 
 
 <div id="header-title">Robert Holmkvist Design & Art direction</div>
-<div class="about">
+<div class="about topLayer">
   <div class="about-wrapper"><div class="col-75">Serit veniende nobis andi tem andundia quatur, volupta cum, quaeperem accum qui sum quationsed quo enis as ute core, ut facessum sundes aut hario beaque pra consentio mosam re sunt occuptam quiant velluptur.
     Aliquam accaborro quatiae et et qui nam eatecusda dolestotata elendit dolorepel mo cus accaborepro quuntis sincid quostione solorro dollo to duntus nus ipicae nonsedit ligniscia porio quidus et laboru.
   </div></div>
@@ -30,6 +30,12 @@ $('#header-title').click(function(){
     $(this).addClass("info-open");
     $('.about').addClass("active");
 });
+
+$('.about.active').click(function(){
+    $('#header-title').removeClass("info-open");
+    $('.about').removeClass("active");
+});
+
 </script>
 
 
