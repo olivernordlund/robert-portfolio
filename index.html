@@ -10,9 +10,9 @@
 </head>
 <body>
 
-<header>Robert Holmkvist Design & Art direction</header>
-
-<button id="btn1" class="buttonProps blue" onclick="toggleInfo()">classList.toggle()</button>
+<header>
+  <div class="toggleInfo">Robert Holmkvist Design & Art direction</div>
+</header>
 
 <div class="container">
   <div class="content">
@@ -21,9 +21,10 @@
 </div>
 
 <script type="text/javascript">
-function toggleInfo() {
-  document.getElementById("btn1").classList.toggle("blue");
-  document.getElementById("btn1").classList.toggle("red");
+function addClass(toggleInfo, open) {
+    if (!hasClass(toggleInfo, open)) {
+        toggleInfo.open += ' ' + open;
+    }
 }
 </script>
 
