@@ -64,6 +64,17 @@ iframe[src*=vimeo] {
   text-transform: uppercase;
 }
 
+.about-toggle {
+  flex-basis: 25%;
+  justify-self: flex-end;
+}
+
+.about-toggle span::after {
+  content: '+';
+  display: block;
+  color: black;
+}
+
 .about-wrapper {
   padding: 0 .75rem;
 }
