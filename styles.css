@@ -56,13 +56,22 @@ iframe[src*=vimeo] {
 }
 
 #header-title {
-  margin: .75rem 1rem;
+  margin: .75rem;
   text-transform: uppercase;
   height: 1rem;
 }
 
+.about-wrapper {
+  padding-top: .75rem;
+  width: 75%;
+}
+
 .about {
-  margin-top: .75rem;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top:0;
+  left:0;
 }
 
 @keyframes fadein {
