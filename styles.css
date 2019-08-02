@@ -55,10 +55,13 @@ iframe[src*=vimeo] {
   align-items: center;
 }
 
-#header-title {
+.header {
   margin: .75rem;
-  text-transform: uppercase;
   height: 1rem;
+}
+
+#header-title {
+  text-transform: uppercase;
 }
 
 .about-wrapper {

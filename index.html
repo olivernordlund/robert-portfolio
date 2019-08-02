@@ -9,39 +9,24 @@
 </head>
 <body>
 
-<div id="header-title">Robert Holmkvist Design & Art direction</div>
+<div class="header">
+  <div class="header-title about-toggle">Robert Holmkvist Design & Art direction</div><div class="about-toggle">
+</div>
 <div class="about">
   <div class="about-wrapper"><div class="col-75">Serit veniende nobis andi tem andundia quatur, volupta cum, quaeperem accum qui sum quationsed quo enis as ute core, ut facessum sundes aut hario beaque pra consentio mosam re sunt occuptam quiant velluptur.
     Aliquam accaborro quatiae et et qui nam eatecusda dolestotata elendit dolorepel mo cus accaborepro quuntis sincid quostione solorro dollo to duntus nus ipicae nonsedit ligniscia porio quidus et laboru.
   </div></div>
 </div>
 
-<div class="video-media-youtube">
-  <ul class="video__container">
-    <li class="video__content">
-      <ul class="video-media-youtube-inner">
-        <li class="media__embed">
-          <div class="video-media-youtube-inner-vi video-media-youtube-inner-vi--ratio">
-            <iframe src="https://www.youtube.com/embed/6iHarkg-SkM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-          </div>
-        </li>
-      </ul>
-    </li>
-  </ul>
-</div>
-
 <div class="flex-container">
     <div class="row">
         <div class="flex-item">1</div>
-        <div class="flex-item">2</div>
-        <div class="flex-item">3</div>
-        <div class="flex-item">4</div>
     </div>
 </div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script type="text/javascript">
-$('#header-title').click(function(){
+$('.about-toggle').click(function(){
     $(this).toggleClass("info-open");
     $('.about').toggleClass("active");
 });
