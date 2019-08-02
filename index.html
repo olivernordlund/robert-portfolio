@@ -6,10 +6,8 @@
   <meta name="author" content="Oliver Nordlund">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="styles.css?v=1.0">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 <body>
-
 
 <div id="header-title">Robert Holmkvist Design & Art direction</div>
 <div class="about">
@@ -18,14 +16,17 @@
   </div></div>
 </div>
 
-<div class="container">
-  <div class="content">
-    <iframe src="//player.vimeo.com/video/23608259?title=0&autoplay=1" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allow="autoplay;" allowfullscreen></iframe>
+  <div class="container">
+   <div class="vendor">
+     <iframe src="http://player.vimeo.com/video/23608259?title=0&autoplay=1" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allow="autoplay;" allowfullscreen></iframe>
+   </div>
+
+   <div class="vendor">
+     <iframe class="fitvidsignore" src="http://player.vimeo.com/video/28523422?title=0&amp;byline=0&amp;portrait=0&amp;color=4584be" width="800/embed/?moog_width=800" height="450" frameborder="0"></iframe>
+   </div>
   </div>
-</div>
 
 <script type="text/javascript">
-
 $('#header-title').click(function(){
     $(this).addClass("info-open");
     $('.about').addClass("active");
@@ -35,42 +36,14 @@ $('.about.active').click(function(){
     $('#header-title').removeClass("info-open");
     $(this).removeClass("active");
 });
-
 </script>
 
-
-<!--<script type="text/javascript">
-jQuery().ready(function() {
-  resizeVideo();
-});
-
-jQuery(window).resize(function() {
-  resizeVideo();
-});
-
-/* Videos */
-function resizeVideo() {
-    jQuery('iframe').each(function() {
-        var iframe = jQuery(this),
-            src = iframe.attr('src'),
-            nativeHeight,
-            nativeWidth,
-            actualWidth,
-            ratio;
-
-        if (src.indexOf("youtube") !== -1 ||
-            src.indexOf("vimeo") !== -1) {
-
-            nativeHeight = iframe.attr('height'),
-            nativeWidth = iframe.attr('width'),
-            actualWidth = iframe.width(),
-            ratio = nativeHeight / nativeWidth;
-
-            iframe.css({height: actualWidth * ratio + 'px', width: jQuery(this).parent().width() + 'px'});
-        }
-    });
-}
-</script>-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="jquery.fitvids.js"></script>
+<script type="text/javascript">
+  $(".container").fitVids();
+  $(".container").fitVids({ customSelector: "iframe[src^='http://socialcam.com']"});
+</script>
 
 </body>
 </html>
