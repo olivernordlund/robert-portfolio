@@ -16,16 +16,25 @@
   </div></div>
 </div>
 
+<div class="video-media-youtube">
+  <ul class="video__container">
+    <li class="video__content">
+      <ul class="video-media-youtube-inner">
+        <li class="media__embed">
+          <div class="video-media-youtube-inner-vi video-media-youtube-inner-vi--ratio">
+            <iframe src="https://www.youtube.com/embed/6iHarkg-SkM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          </div>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script type="text/javascript">
 $('#header-title').click(function(){
-    $(this).addClass("info-open");
-    $('.about').addClass("active");
-});
-
-$('.about.active').click(function(){
-    $('#header-title').removeClass("info-open");
-    $(this).removeClass("active");
+    $(this).toggleClass("info-open");
+    $('.about').toggleClass("active");
 });
 </script>
 
