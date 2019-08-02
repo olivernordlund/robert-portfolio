@@ -1,4 +1,13 @@
-/* General */
+@font-face {
+    font-family: 'AG-Md';
+    src: url('/fonts/berthold_akzidenz_grotesk_be_medium-webfont.eot');
+    src: url('/fonts/berthold_akzidenz_grotesk_be_medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/berthold_akzidenz_grotesk_be_medium-webfont.woff') format('woff'),
+         url('/fonts/berthold_akzidenz_grotesk_be_medium-webfont.ttf') format('truetype'),
+         url('/fonts/berthold_akzidenz_grotesk_be_medium-webfont.svg#berthold_akzidenz_grotesk_bMd') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
 
 html {
   -webkit-font-smoothing: antialiased;
@@ -16,7 +25,7 @@ html {
 }
 
 body {
-    font-family: helvetica, arial, sans-serif;
+    font-family: 'AG-Md', helvetica, arial, sans-serif;
     background-color: whitesmoke;
     margin: 0;
     height: 100%;
