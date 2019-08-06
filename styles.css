@@ -108,9 +108,14 @@ a {
   color: inherit;
 }
 
-a:hover {
-  color: rgb(241,78,35);
-  transition: .2s all ease;
+@media (hover: hover) {
+    a:hover { color: rgb(241,78,35);
+      transition: .2s all ease; }
+
+      .about-toggle:hover span:before,
+      .about-toggle:hover span:after {
+        background-color: rgb(241,78,35);
+      }
 }
 
 a:focus {
@@ -155,12 +160,6 @@ iframe[src*=vimeo] {
     opacity: 1;
 }
 
-.about-toggle:hover span:before,
-.about-toggle:hover span:after {
-  background-color: rgb(241,78,35);
-  transition: .2s all ease;
-}
-
 .about-toggle span:before,
 .about-toggle span:after {
   position: absolute;
@@ -168,6 +167,7 @@ iframe[src*=vimeo] {
   height: 1rem;
   width: 2px;
   background-color: #000;
+  transition: .2s all ease;
 }
 
 .about-toggle span:before {
